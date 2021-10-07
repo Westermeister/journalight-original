@@ -92,7 +92,7 @@ the following commands:
 
 ```
 sed 's/#.*//' puppeteer-dependencies.txt | xargs sudo apt-get install
-echo NODE_ENV=production > .env && npm install --production
+echo NODE_ENV=production > .env && npm install && npm run dist
 pip install -r requirements.txt
 ```
 
